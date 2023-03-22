@@ -1,4 +1,17 @@
 #!/bin/bash
+#  Generic ActivityPub Client
+#
+# This is a Generic ActivityPub client implemented via a combination of a Linux Shell Script comprising Python and cURL invocations. 
+# Usage requires targeting an ActivityPub server, where you have an account associated with an outbox, that supports:
+# [1] OAuth for authentication 
+# [2] ActivityStreams Payloads (i.e., "application/ld+json" or "application/activity+json") using the ActivityPub client-server protocol
+# Command Line Invocations: 
+## Obtain Initial Token
+# ./oauth_cli_python_new.sh note3.jsonld Y
+#
+## If you have already obtained a token i.e., token hasn't expired
+# ./oauth_cli_python_new.sh note3.jsonld 
+
 HOST={fediverse-server-cname}
 CLIENT_ID={oauth-client-id}
 CLI_SECRET={bearer-token}
