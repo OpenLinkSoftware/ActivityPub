@@ -1,0 +1,8 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+      "type":"Undo",
+      "object":{
+        "type": "Like",
+        "object": "https://mastodon.social/@someuser/9999"
+      }
+}
