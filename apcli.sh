@@ -92,7 +92,7 @@ fi
 
 if [ "$action" == "logout" ]
 then
-    rm -f oauth_token.json
+    rm -f oauth_token.json profile.jsonld
     echo "Logged out"
     exit 0
 fi
