@@ -75,7 +75,7 @@ function cb_append_jpath_component (jpath, component) {
 
 function cb_append_jpath_value (jpath, value) {
         if (jpath == "\"" ATTR "\"") {
-            gsub(/"/,"",value)
+            #gsub(/"/,"",value)
             print value
         }
 }
